@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from app.middleware import WAFMiddleware
+from .middleware import WAFMiddleware
 
 app = FastAPI()
 app.add_middleware(WAFMiddleware)
