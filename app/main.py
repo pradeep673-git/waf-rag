@@ -8,4 +8,3 @@ app.add_middleware(WAFMiddleware)
 
 def home():
     return {"message": "this is a waf and it is working"}
-#@app.get("/hello")
