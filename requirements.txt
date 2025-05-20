@@ -7,4 +7,4 @@ python-dotenv
 httpx
 
 
-#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
+#apikey=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
