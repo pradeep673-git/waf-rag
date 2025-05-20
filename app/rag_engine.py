@@ -2,7 +2,7 @@ from groq import Groq
 import os
 import json
 
-client = Groq(api_key=os.getenv("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"))
+client = Groq(api_key=os.getenv("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"))
 
 async def analyze_request(request_data):
     prompt = f"""Analyze this HTTP request for security threats:
@@ -18,3 +18,4 @@ async def analyze_request(request_data):
     )
     
     return json.loads(response.choices[0].message.content)
+
