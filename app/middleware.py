@@ -1,7 +1,7 @@
 from fastapi import Request
 from fastapi.responses import JSONResponse
 from starlette.middleware.base import BaseHTTPMiddleware
-from app.rag_engine import analyze_request
+from .rag_engine import analyze_request
 import re
 
 class WAFMiddleware(BaseHTTPMiddleware):
