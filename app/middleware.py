@@ -67,7 +67,7 @@ class WAFMiddleware(BaseHTTPMiddleware):
                 content={"error": f"WAF processing error: {str(e)}"}
             )
 
-    def is_malicious(self, body: str) -> bool:
+    def _is_malicious(self, body: str) -> bool:
         """Check against both regex patterns and literal strings"""
         if any(pattern.search(body) for pattern in self.regex_patterns):
             return True
